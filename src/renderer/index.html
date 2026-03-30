@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <title>Calendar Notes Themes</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Preview Area -->
+    <div class="preview-area">
+      <div class="preview-header">
+        <h2>Preview</h2>
+      </div>
+      <div class="preview-container" id="preview-container">
+        <!-- CalendarNotes UI preview will be rendered here -->
+      </div>
+    </div>
+
+    <!-- Style Editor Panel -->
+    <div class="editor-panel" id="editor-panel">
+      <div class="editor-header">
+        <h2>Style Editor</h2>
+      </div>
+      <div class="editor-content" id="editor-content">
+        <p class="editor-placeholder">Click on a component in the preview to edit its styles.</p>
+      </div>
+      <div class="editor-actions" id="editor-actions" style="display:none;">
+        <button class="btn btn-apply" id="btn-apply">Apply</button>
+        <button class="btn btn-cancel" id="btn-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Status Bar -->
+  <div class="status-bar" id="status-bar">
+    <span class="status-file" id="status-file">No theme loaded</span>
+    <span class="status-modified" id="status-modified"></span>
+  </div>
+
+  <script type="module" src="./js/App.js"></script>
+</body>
+</html>
