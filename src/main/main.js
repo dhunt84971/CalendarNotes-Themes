@@ -77,11 +77,24 @@ function buildMenu() {
       label: 'View',
       submenu: [
         { role: 'reload' },
-        { role: 'toggleDevTools' },
-        { type: 'separator' },
-        { role: 'zoomIn' },
-        { role: 'zoomOut' },
-        { role: 'resetZoom' }
+        { role: 'toggleDevTools' }
+      ]
+    },
+    {
+      label: 'Help',
+      submenu: [
+        {
+          label: 'About',
+          click: () => {
+            dialog.showMessageBox(mainWindow, {
+              type: 'info',
+              title: 'About Calendar Notes Themes',
+              message: 'Calendar Notes Themes',
+              detail: `Version ${app.getVersion()}\n\nA theme editor for CalendarNotes.`,
+              buttons: ['OK']
+            });
+          }
+        }
       ]
     }
   ];

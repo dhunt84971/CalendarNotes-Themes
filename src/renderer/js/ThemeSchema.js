@@ -54,7 +54,7 @@ export const DEFAULT_THEME = {
   notesHeaderBorder: '#ff7400',
   notesHeaderText: '#fff',
   notesSelectedBack: 'blue',
-  notesSelectedText: '#000',
+  notesSelectedText: '#000', // Not currently used by CalendarNotes - hidden from editor
   notesText: '#000',
   notesHighlightText: '#ffcda4',
   pagesBack: '#fff',
@@ -65,7 +65,7 @@ export const DEFAULT_THEME = {
   pageHoverBack: '#d96200',
   pageHoverText: '#fff',
   pageSelectedBack: '#d96200',
-  pageSelectedText: '#fff',
+  pageSelectedText: '#fff', // Not currently used by CalendarNotes - hidden from editor
   pageSelectedBorder: 'lightgray',
   searchBack: '#fff',
   searchBorder: 'lightgray',
@@ -73,7 +73,7 @@ export const DEFAULT_THEME = {
   settingsBack: '#ffcda4',
   settingsText: '#000',
   tabBack: '#a74c00',
-  tabBorder: '#00ffea',
+  tabBorder: 'none',
   tabDivider: '#ff7400',
   tabHoverBack: '#d96200',
   tabHoverText: '#fff',
@@ -83,7 +83,7 @@ export const DEFAULT_THEME = {
   tasksBack: '#ffcda4',
   tasksBorder: '#ff7400',
   tasksSelectedBack: 'blue',
-  tasksSelectedText: '#000',
+  tasksSelectedText: '#000', // Not currently used by CalendarNotes - hidden from editor
   tasksText: '#000',
   tvBack: '#ffcda4',
   tvBorder: 'lightgray',
@@ -152,7 +152,7 @@ const GROUPS = {
     label: 'Tasks Panel',
     properties: [
       'tasksBack', 'tasksBorder', 'tasksText',
-      'tasksSelectedBack', 'tasksSelectedText'
+      'tasksSelectedBack' //, 'tasksSelectedText' // Not currently used by CalendarNotes
     ]
   },
   treeView: {
@@ -181,7 +181,7 @@ const GROUPS = {
     properties: [
       'notesBack', 'notesBorder', 'notesText',
       'notesHighlightText',
-      'notesSelectedBack', 'notesSelectedText'
+      'notesSelectedBack' //, 'notesSelectedText' // Not currently used by CalendarNotes
     ]
   },
   pages: {
@@ -190,7 +190,7 @@ const GROUPS = {
       'pagesBack', 'pagesBorder',
       'pageBack', 'pageBorder', 'pageText',
       'pageHoverBack', 'pageHoverText',
-      'pageSelectedBack', 'pageSelectedText', 'pageSelectedBorder'
+      'pageSelectedBack', /* 'pageSelectedText', // Not currently used by CalendarNotes */ 'pageSelectedBorder'
     ]
   },
   list: {
